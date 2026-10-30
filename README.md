@@ -19,7 +19,9 @@ Each release carries:
 
 `release.json` is the trust anchor. Consumers verify the tarball against it.
 
-## Mirrored by
+## Published by
 
-`manus-dei` carries `scripts/mirror-release.sh` for copying a release from the
-private source into this mirror. The private release remains the producer.
+The private source release workflow publishes each release to both the
+private source and this mirror. `manus-dei` also carries
+`scripts/mirror-release.sh` as a recovery path for re-publishing a release
+manually. The private release remains the producer.
